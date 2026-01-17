@@ -49,11 +49,11 @@ int main(){
     printf("Enter the Elements: \n");
     for(i =0; i < n; i++){
         scanf("%d", &a[i]);
-        
+       }
         printf("Elements are there: \n");
         for(i =0 ; i < n; i++){
             printf("%d\n", a[i]);
-        }
+        
     }
     
     do{
