@@ -27,4 +27,5 @@ int isSort(int arr[], int n) {
         }
     }
     return 1;
+
 }
