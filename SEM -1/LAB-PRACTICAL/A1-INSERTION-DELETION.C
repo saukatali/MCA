@@ -75,7 +75,7 @@ int main(){
         break;
         
         case 2:
-          printf("Enter the position to insert elements: \n ");
+          printf("Enter the position to Delete elements: \n ");
         scanf("%d", &pos);
         
         adelete(a, pos);
