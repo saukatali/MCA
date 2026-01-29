@@ -31,3 +31,4 @@ int bindec(int bn, int dn, int i)
 
     return bindec(bn / 10, dn, i + 1);
 }
+
