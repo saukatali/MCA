@@ -23,21 +23,21 @@ int main()
         }
         else if (ch == '^')
         {
-            while (s[top] == '^')
-                postfix[j++] = s[top--];
+            for (; s[top] == '^'; top--)
+                postfix[j++] = s[top];
             s[++top] = ch;
         }
         else if (ch == '*' || ch == '/')
         {
-            while (s[top] == '^' || s[top] == '*' || s[top] == '/')
-                postfix[j++] = s[top--];
+            for (; s[top] == '^' || s[top] == '*' || s[top] == '/'; top--)
+                postfix[j++] = s[top];
             s[++top] = ch;
         }
         else if (ch == '+' || ch == '-')
         {
-            while (s[top] == '^' || s[top] == '*' || s[top] == '/' ||
-                   s[top] == '+' || s[top] == '-')
-                postfix[j++] = s[top--];
+            for (; s[top] == '^' || s[top] == '*' || s[top] == '/' ||
+                   s[top] == '+' || s[top] == '-'; top--)
+                postfix[j++] = s[top];
             s[++top] = ch;
         }
         else if (ch == '(')
@@ -46,14 +46,14 @@ int main()
         }
         else if (ch == ')')
         {
-            while (s[top] != '(')
-                postfix[j++] = s[top--];
+            for (; s[top] != '('; top--)
+                postfix[j++] = s[top];
             top--;   // remove '('
         }
     }
 
-    while (s[top] != '#')
-        postfix[j++] = s[top--];
+    for (; s[top] != '#'; top--)
+        postfix[j++] = s[top];
 
     postfix[j] = '\0';
 
