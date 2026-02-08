@@ -3,8 +3,7 @@
 
 int bindec(int bn, int dn, int i);
 
-int main()
-{
+int main(){
     int bn, dn = 0;
 
     printf("Enter binary number: ");
@@ -17,12 +16,10 @@ int main()
     return 0;
 }
 
-int bindec(int bn, int dn, int i)
-{
+int bindec(int bn, int dn, int i){
     int r;
 
-    if (bn == 0)
-    {
+    if (bn == 0){
         return dn;
     }
 
@@ -31,3 +28,4 @@ int bindec(int bn, int dn, int i)
 
     return bindec(bn / 10, dn, i + 1);
 }
+
