@@ -1,8 +1,5 @@
 #include <stdio.h>
 
-void linear_search();
-void binary_search();
-
 void linear_search() {
     int arr[10], size, search, i, found = 0;
 
@@ -105,4 +102,5 @@ int main() {
 
     return 0;
 }
+
 
