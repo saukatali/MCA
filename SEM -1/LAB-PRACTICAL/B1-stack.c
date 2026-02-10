@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 4
-
-void push(int);
-void pop();
-void display();
-
 int s[MAX];
 int rear = -1;
 int i;
