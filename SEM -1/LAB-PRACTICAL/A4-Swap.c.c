@@ -21,11 +21,14 @@ int main() {
     int a, b;
     printf("Enter two numbers: ");
     scanf("%d %d", &a, &b);
-    printf("Before swapping: a = %d, b = %d\n", a, b);
+    printf("swapbyvalue);
     swapbyvalue(a, b);
-    printf("After swapping in main function: a = %d, b = %d\n", a, b);
+    
+    printf("swapByReference);
     swapByReference(&a, &b);
+    
     printf("After swapping in main function: a = %d, b = %d\n", a, b);
     return 0;
 }
+
 
